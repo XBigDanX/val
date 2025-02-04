@@ -1,0 +1,67 @@
+/* Romantic gradient background */
+body {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Center and style the card */
+  .valentine-card {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  /* The card-body is our positioning context */
+  .card-body {
+    position: relative;
+    overflow: visible; /* Ensure moving elements remain visible */
+    min-height: 400px; /* Enough room for the moving elements */
+  }
+  
+  /* Main image styling (Square shape) */
+  .main-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures image stays in square shape */
+    display: block;
+    margin: auto;
+  }
+  
+  /* Button styling for "Yes" and "No" to be the same size */
+  #yes-btn, #no-btn {
+    transition: 0.3s ease-in-out;
+    font-size: 1.25rem;
+    padding: 15px 20px; /* Adjust padding for equal size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px; /* Same height for both buttons */
+  }
+  
+  /* Adjust the spacing of the buttons in grid layout */
+  .buttons-container .col-6 {
+    padding: 0; /* Remove extra padding around the buttons */
+  }
+  
+  /* Ensure buttons don't stretch too wide */
+  #yes-btn, #no-btn {
+    max-width: 250px; /* Limit width so they don't stretch too much */
+    margin: 0 auto; /* Center the buttons */
+  }
+  
+  /* Message styling so it appears in front */
+  #message {
+    position: relative;
+    z-index: 9999;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff3b6b;
+  }
+  
+  /* Make sure "No" button can move */
+  #no-btn {
+    position: absolute;
+    z-index: 10; /* Ensure it stays on top */
+  }
+  
